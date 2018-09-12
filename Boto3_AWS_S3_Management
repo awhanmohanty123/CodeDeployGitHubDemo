@@ -1,0 +1,10 @@
+#Establish Connection 
+from boto.s3.connection import S3Connection
+conn = S3Connection('AKIAJCLXPQC4VCMFBH4Q', '6XIINHST/WSWdJlRfI834HnUoLBQEQ7OGy7ZUFAi')
+
+# Create a Bucket 
+conn.create_bucket('mybucketawhan')
+
+# Delete a Bucket 
+
+conn.delete_bucket('mybucketawhan')
