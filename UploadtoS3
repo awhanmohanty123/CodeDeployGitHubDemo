@@ -1,0 +1,4 @@
+import boto3
+s3 = boto3.resource('s3')
+bucket = s3.Bucket('python.basics.upload')
+s3.Object('python.basics.upload', 'appl_stock.csv').put(Body=open('appl_stock.csv', 'rb'))
